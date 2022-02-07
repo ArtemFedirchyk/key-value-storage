@@ -1,6 +1,5 @@
-package com.keyvaluedb.util;
+package com.keyvaluestorage.util;
 
-import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -12,7 +11,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Set;
 
 @Component
 public class PropertiesHelper {

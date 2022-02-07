@@ -1,4 +1,4 @@
-package com.keyvaluedb.util;
+package com.keyvaluestorage.util;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.SerializationUtils;

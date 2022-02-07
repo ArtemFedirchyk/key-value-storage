@@ -1,9 +1,9 @@
-package com.keyvaluedb.db.implementation;
+package com.keyvaluestorage.db.implementation;
 
-import com.keyvaluedb.db.FileStorage;
-import com.keyvaluedb.model.StorageVO;
-import com.keyvaluedb.util.ConvertingHelper;
-import com.keyvaluedb.util.PropertiesHelper;
+import com.keyvaluestorage.db.FileStorage;
+import com.keyvaluestorage.model.StorageVO;
+import com.keyvaluestorage.util.ConvertingHelper;
+import com.keyvaluestorage.util.PropertiesHelper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

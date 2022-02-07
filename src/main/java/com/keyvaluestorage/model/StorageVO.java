@@ -1,4 +1,4 @@
-package com.keyvaluedb.model;
+package com.keyvaluestorage.model;
 
 import lombok.*;
 

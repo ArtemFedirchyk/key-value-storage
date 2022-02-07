@@ -1,13 +1,11 @@
-package com.keyvaluedb.controller;
+package com.keyvaluestorage.controller;
 
-import com.keyvaluedb.model.StorageVO;
-import com.keyvaluedb.service.StorageService;
+import com.keyvaluestorage.model.StorageVO;
+import com.keyvaluestorage.service.StorageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.IOException;
 
 @RestController
 @RequestMapping(value = "/api/storage")
@@ -17,18 +15,18 @@ public class StorageController {
     private final StorageService storageService;
 
     @PostMapping
-    public ResponseEntity<StorageVO> saveRecord(@RequestBody StorageVO storageVO) throws IOException {
-        return new ResponseEntity<>(storageService.saveRecord(storageVO), HttpStatus.OK);
+    public ResponseEntity<StorageVO> saveRecord(@RequestBody StorageVO storageVO) {
+        return new ResponseEntity<>(storageService.saveRecord(storageVO), HttpStatus.CREATED);
     }
 
     @GetMapping
-    public ResponseEntity<StorageVO> getRecord(@RequestParam("key") String key) throws IOException {
+    public ResponseEntity<StorageVO> getRecord(@RequestParam("key") String key) {
         return new ResponseEntity<>(storageService.getRecord(key), HttpStatus.OK);
     }
 
     @PutMapping
-    public ResponseEntity<StorageVO> updateRecord(@RequestBody StorageVO storageVO) {
-        return new ResponseEntity<>(storageService.updateRecord(storageVO), HttpStatus.OK);
+    public void updateRecord(@RequestBody StorageVO storageVO) {
+        storageService.updateRecord(storageVO);
     }
 
     @DeleteMapping

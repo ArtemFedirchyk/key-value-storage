@@ -1,4 +1,4 @@
-package com.keyvaluedb;
+package com.keyvaluestorage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

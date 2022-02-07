@@ -1,8 +1,10 @@
-package com.keyvaluedb.db;
+package com.keyvaluestorage.service;
 
-import com.keyvaluedb.model.StorageVO;
+import com.keyvaluestorage.model.StorageVO;
 
-public interface FileStorage {
+import java.io.IOException;
+
+public interface StorageService {
 
     StorageVO saveRecord(StorageVO storageVO);
 
