@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.springframework.boot" version "2.0.1.RELEASE"
 }
 
 group 'com.company'
@@ -9,6 +10,10 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+}
+
+bootRun {
+    main = 'com.keyvaluestorage.EntryPoint'
 }
 
 dependencies {
