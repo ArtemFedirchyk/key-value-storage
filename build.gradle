@@ -13,11 +13,13 @@ repositories {
 
 dependencies {
     // Spring
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.6.3'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.6.3'
     // Lombok
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
-    // Apache commons
+    // Apache
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    compile group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
     // Testing libs
     testCompile group: 'junit', name: 'junit', version: '4.13.2'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.6.3'
 }
