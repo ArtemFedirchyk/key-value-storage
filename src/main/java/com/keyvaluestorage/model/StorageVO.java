@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class StorageVO implements Serializable {
+
     private String key;
     private Object value;
 }
